@@ -1,1 +1,2 @@
-ShaderFixes will have what they do at the start of the file
+ShaderFixes will have what they do at the start of the file.
+When using, ShaderFixes must be a flat list, meaning all shader replacements must be under ShaderFixes and not in subfolders like in this repo
