@@ -66,11 +66,10 @@ void main(
   float3 vec = v0.xyz / v0.w;
   float dzdx = abs(ddx(vec.z));
   float dzdy = abs(ddy(vec.z));
-
   float t = step(dzdy * bias, dzdx);
 
   o0 = float4(lerp(ColorA, ColorB, t), Opacity);
-  o1 = o0;
+  o1 = float4(0.0, 0.0, 1.0, 0.0); // Don't touch, its a motion vector output
 
   return;
 }
